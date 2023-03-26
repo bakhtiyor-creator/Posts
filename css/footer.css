@@ -1,0 +1,24 @@
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+footer {
+  background: #232536;
+  height: 200px;
+}
+footer .footer__left a {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=footer.css.map */

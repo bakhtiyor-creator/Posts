@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="icon" type="image/png" href="./images/navbar/Logo.svg" />
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/category.css">
+    <!-- Fonst google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header w3-include-html="header.html"></header>
+
+
+    <main>
+        <!-- Startup section start -->
+        <section id="startup">
+            <div class="container text-center startup">
+                <h1 class="starup__title fw-bolder">Startup</h1>
+                <p class="startup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br> eiusmod
+                    tempor incididunt ut labore.</p>
+                <p class="startup__text2">Blog > startup</p>
+            </div>
+        </section>
+        <!-- Startup section finish -->
+
+        <!-- Tags section -->
+        <section id="tags">
+            <div class="container">
+                <!-- Button trigger modal -->
+              
+                <form class="search-box d-flex">
+                    <i class="bi bi-search me-4"></i>
+                    <input style="vertical-align: 0px; width: 100%;" type="search" name="focus"
+                        placeholder="Searching ..." id="search-input" value="">
+                </form>
+                <div class="all_tags__right mt-5">
+                    <h1 class="text-center mb-4">All Tags</h1>
+                    <div class="tags__menu">
+                        <ul class="d-flex justify-content-center">
+                            <li class="tags__menus border border-secondary rounded-pill p-2 mb-3 me-4"><a
+                                    href="#">Business</a></li>
+                            <li class="tags__menus border border-secondary rounded-pill p-2 mb-3 me-4"><a
+                                    href="#">Experience</a></li>
+                            <li class="tags__menus border border-secondary rounded-pill p-2 mb-3 me-4"><a
+                                    href="#">Screen</a></li>
+                            <li class="tags__menus border border-secondary rounded-pill p-2 mb-3 me-4"><a
+                                    href="#">Technology</a></li>
+                            <li class="tags__menus border border-secondary rounded-pill p-2 mb-3 me-4"><a
+                                    href="#">Marketing</a></li>
+                            <li class="tags__menus border border-secondary rounded-pill p-2 mb-3 me-4"><a
+                                    href="#">Life</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="all__tags mt-5">
+                    <div class="all__tags">
+                        <div class="all__tags__left">
+                            <div class="tag__cards d-flex mb-4">
+                                <div class="tag__cards__img"><img
+                                        src="images/tags/two-women-in-front-of-dry-erase-board-1181533.png" alt="">
+                                </div>
+                                <div class="tag__cards__img__text ms-3">
+                                    <h5 class="tag__cards__img__text__title">Business</h5>
+                                    <h2 class="tag__cards__img__text__title2">Top 6 free website mockup tools 2022</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        <br>
+                                        incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div aria-label="Page navigation example mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer w3-include-html="footer.html"></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/category.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/include.js"></script>
+</body>
+
+</html>

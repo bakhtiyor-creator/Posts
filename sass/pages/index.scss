@@ -1,0 +1,149 @@
+@use '../global';
+
+main {
+  margin-top: 51px;
+  /*********** Home page start ***********/
+  #home {
+    background-image: url("../../images/home/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .radial-gradient {
+      height: 800px;
+      background: radial-gradient(
+        30.56% 76.04% at 74.58% 0%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      .home {
+        padding-top: 120px;
+        &__title {
+          padding-bottom: 24px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+          color: #ffffff;
+          span {
+            font-weight: 800;
+            letter-spacing: 1px;
+          }
+        }
+        &__title-2 {
+          padding-bottom: 24px;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 64px;
+          letter-spacing: -2px;
+          color: #ffffff;
+          letter-spacing: 2px;
+        }
+        &__comment-title {
+          padding-bottom: 16px;
+          letter-spacing: 2px;
+          font-size: 16px;
+          line-height: 28px;
+          color: #ffffff;
+          span {
+            color: #ffd050;
+          }
+        }
+        &__comment-text {
+          padding-bottom: 48px;
+          font-size: 16px;
+          line-height: 28px;
+          color: #ffffff;
+        }
+        button {
+          padding: 15px 45px;
+          a {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+            color: #232536;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 510px) {
+  .home {
+    text-align: center;
+    padding: 10px !important;
+    &__title-2 {
+      font-size: 30px !important;
+    }
+  }
+}
+/*********** Home page finish ***********/
+
+/*********** Popular blogs start ***********/
+#popular-blogs {
+  .pop-blog {
+    &__cards-1 {
+      &__body {
+        .card-body-title {
+          padding-top: 20px;
+          padding-bottom: 12px;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: #4c4c4c;
+          span {
+            color: #592ea9;
+          }
+        }
+        .card-body-title-2 {
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 40px;
+          letter-spacing: -1px;
+          color: #232536;
+          padding-bottom: 13px;
+        }
+        .card-body-text {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #232536;
+          opacity: 0.7;
+        }
+      }
+    }
+    .line {
+      margin: 60px 0px;
+      opacity: 0.3;
+      border: 1px solid #6d6e76;
+    }
+  }
+}
+/*********** Popular blogs finish ***********/
+
+/***********  Choose A Catagory start ***********/
+#category {
+  .category__item {
+    h5 {
+      padding-top: 20px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      color: #232536 !important;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #6d6e76;
+    }
+  }
+  .category__item:hover {
+    background: #FFD050;
+    img {
+        background: #FBF6EA;
+    }
+  }
+}

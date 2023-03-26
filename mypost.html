@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My post</title>
+    <link rel="icon" type="image/png" href="./images/navbar/Logo.svg" />
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/blogs.css">
+    <!-- Fonst google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header w3-include-html="header.html"></header>
+
+    <main>
+        <section id="All-posts">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1>My posts</h1>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Add categorys
+                    </button>
+                </div>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Category</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="category-frm">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1">Category Title</span>
+                                        <input type="text" class="form-control" aria-label="title"
+                                            aria-describedby="basic-addon1" id="ctTitle">
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1 ">Category Description</span>
+                                        <textarea class="form-control" aria-label="With textarea"
+                                            id="ctDesc"></textarea>
+                                    </div>
+
+                                    <div class="input-group mb-3">
+                                        <input type="file" class="form-control" id="ct-uploadPhoto"
+                                            aria-describedby="inputGroupFileAddon04" aria-label="Upload"
+                                            placeholder="Photo">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1 ">Category Tags</span>
+                                        <input type="text" class="form-control" aria-label="title"
+                                            aria-describedby="basic-addon1" id="ctTags">
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Save</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="search-box d-flex mt-5">
+                    <i class="bi bi-search me-4"></i>
+                    <input style="vertical-align: 0px; width: 100%;" type="search" name="focus"
+                        placeholder="Searching ..." id="search-input" value="">
+                </form>
+                <div class="all-posts mt-5">
+                    <h1>All posts</h1>
+                </div>
+                <div class="tag__cards mb-4 mt-5" id="allPosts">
+                   
+                </div>
+                <div aria-label="navigation">
+                    <ul class="pagination">
+                      
+                    </ul>
+                  </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer w3-include-html="footer.html"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/const.js"></script>
+    <script src="js/mypost.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/include.js"></script>
+</body>
+
+</html>

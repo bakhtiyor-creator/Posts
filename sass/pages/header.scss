@@ -1,0 +1,54 @@
+@use '../global';
+
+nav {
+  background: #232536;
+  .offcanvas-body {
+    background: #232536;
+    .nav-item {
+      a {
+        line-height: 28px !important;
+      }
+    }
+  }
+  .offcanvas-header {
+    background: #232536;
+  }
+  .offcanvas-header .btn-close {
+    background-color: transparent !important;
+  }
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all 0.5s !important;
+}
+nav ul li a:hover {
+  color: #555 !important;
+}
+nav ul li a {
+  position: relative !important;
+}
+nav ul li a:after {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.navbar__login {
+  border: none;
+  a {
+    font-weight: 700px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #232536 !important;
+  }
+}

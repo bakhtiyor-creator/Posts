@@ -1,0 +1,46 @@
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#aboutusTiltle {
+  overflow: hidden;
+  background: #f4f0f8;
+}
+#aboutusTiltle .aboutus {
+  padding: 120px 0px;
+}
+#aboutusTiltle .aboutus__title p {
+  color: #6d6e76;
+}
+
+.aboutus__all {
+  margin: 60px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutus__all {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .aboutus__all__right {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .aboutus__all__left img {
+    width: 100%;
+  }
+  .aboutus__all_2 {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .aboutus__all_2 .aboutus__all__left2 img {
+    width: 100% !important;
+  }
+  .aboutus__all_2 .aboutus__all__left2 .aboutus__all__right2 {
+    text-align: center !important;
+  }
+}/*# sourceMappingURL=AboutUs.css.map */

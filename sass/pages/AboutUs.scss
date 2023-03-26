@@ -1,0 +1,45 @@
+@use '../global';
+#aboutusTiltle {
+  overflow: hidden;
+  background: #f4f0f8;
+  .aboutus {
+    padding: 120px 0px;
+    &__title {
+      p {
+        color: #6d6e76;
+      }
+    }
+  }
+}
+
+.aboutus__all {
+    margin: 60px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus__all {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        &__right {
+            margin-top: 50px;
+            text-align: center;
+        }
+        &__left {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .aboutus__all_2 {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        .aboutus__all__left2 {
+            img {
+                width: 100% !important;
+            }
+            .aboutus__all__right2 {
+                text-align: center !important;
+            }
+        }
+    }
+}

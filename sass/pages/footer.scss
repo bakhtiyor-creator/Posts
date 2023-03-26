@@ -1,0 +1,16 @@
+@use "../global";
+footer {
+  background: #232536;
+  height: 200px;
+  .footer__left a {
+    font-size: 16px;
+    line-height: 28px;
+    color: #ffffff;
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 420px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+}

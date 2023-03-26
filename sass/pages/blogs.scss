@@ -1,0 +1,134 @@
+@use '../global';
+#Featured-Post {
+  background: #f4f0f8;
+  margin-top: 20px;
+  .postAll {
+    margin-top: 50px;
+  }
+  .postAll__left {
+    h3 {
+      padding-top: 80px;
+      padding-bottom: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #232536;
+    }
+    h1 {
+      padding-bottom: 14px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+      letter-spacing: -2px;
+      color: #232536;
+    }
+    pre {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #4c4c4c;
+      span {
+        color: #592ea9;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #6d6e76;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .postAll {
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  .postAll__right {
+    margin-top: 30px;
+  }
+}
+/********* Startup section finished *********/
+.search-box {
+  font-size: 30px;
+  padding: 8px 20px;
+  border: 1px solid #c1c1c1;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.search-box:hover {
+  border-color: #aaaaaa;
+}
+
+.search-box:focus-within {
+  border-color: #2e44d6;
+  box-shadow: 0 0 0 1px rgba(50, 29, 182, 0.4);
+}
+
+input {
+  font-family: Proxima Nova;
+  letter-spacing: -0.2px;
+  font-size: 30px;
+  border: none;
+  color: #323232;
+}
+
+input:focus {
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.clear:not(:valid) ~ .search-clear {
+  display: none;
+}
+.tag__cards__img__text {
+  .tag__cards__img__text__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #592ea9;
+  }
+  .tag__cards__img__text__title2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #232536;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6d6e76;
+  }
+}
+.tags__menu {
+  ul li a {
+    color: #232536;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .tag__cards {
+    flex-wrap: wrap !important;
+    // border: 1px solid;
+    .tag__cards__img img {
+      width: 100%;
+    }
+  }
+}
+
+#All-posts {
+  margin-top: 80px;
+}

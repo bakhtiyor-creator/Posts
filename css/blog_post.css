@@ -1,0 +1,25 @@
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.blog__post {
+  margin-top: 80px;
+}
+.blog__post .comment__profile__name p {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #592ea9;
+  opacity: 0.87;
+}
+.blog__post .comment__profile__name p span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  color: #6d6e76;
+}/*# sourceMappingURL=blog_post.css.map */
